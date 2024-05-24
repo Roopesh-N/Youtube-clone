@@ -13,4 +13,5 @@ export const YOUTUBE_SEARCH_SUGGESTIONS_API="http://suggestqueries.google.com/co
 
 export const YOUTUBE_SEARCH_RESULTS_API="https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&type=video&key="+GOOGLE_API_KEY+"&q="
 
-export const OFFSET_LIVE_CHAT=30;
+export const OFFSET_LIVE_CHAT=30
+
