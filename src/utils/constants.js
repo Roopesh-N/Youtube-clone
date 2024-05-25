@@ -11,7 +11,7 @@ export const VIDEO_INFO_API="https://youtube.googleapis.com/youtube/v3/videos?pa
 
 export const YOUTUBE_SEARCH_SUGGESTIONS_API="http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q="
 
-export const YOUTUBE_SEARCH_RESULTS_API="https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&type=video&key="+GOOGLE_API_KEY+"&q="
+export const YOUTUBE_SEARCH_RESULTS_API="https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&type=video&key="+GOOGLE_API_KEY+"&q="
 
 export const OFFSET_LIVE_CHAT=30
 

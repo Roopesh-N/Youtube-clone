@@ -12,7 +12,6 @@ const Header = () => {
   const navigate=useNavigate();
 
   const [searchText,setsearchText]=useState("");
-
   const [suggestions,setsuggestions]=useState([]);
   const [showsuggestions,setshowsuggestions]=useState(false);
   const [showresults,setshowresults]=useState(false); 
@@ -24,7 +23,7 @@ const Header = () => {
     // make an api call after every key press
     // but if the difference between 2 api calls is <200ms
     // decline the api call
-    const timer=setTimeout(()=>getSearchSuggestions(),2000);
+    const timer=setTimeout(()=>getSearchSuggestions(),500);
     return ()=>{
       clearTimeout(timer);
     }
@@ -67,7 +66,6 @@ const LRUcache=()=>{
       dispatch(addSuggestions({
         [searchText]:result,
       }))
-
     }
 
     // if search text suggestions not in cache, call api and save them in cache
@@ -77,7 +75,7 @@ const LRUcache=()=>{
       const jsondata= await suggestionsdata.json();
       setsuggestions(jsondata[1]);
       dispatch(addSuggestions({
-        [searchText]:jsondata[1],
+        [searchText]:jsondata[1]
       } ))
     }
     // if cache size exceeded remove the least recently used
@@ -103,13 +101,11 @@ const LRUcache=()=>{
   const handlesidebar=()=>{
     dispatch(togglesidebar());
   }
-  
-
   return (
     <div className='sticky top-0 bg-white grid grid-cols-12 shadow-lg z-50'>
       <div className='flex hover:cursor-pointer col-span-1'>
         <img alt="menu_hamburger" className='size-16' src={hamburger} onClick={handlesidebar}/>
-        <img alt="utubelogo" className="size-16" src={youtubeLogo}/>
+        <img alt="utubelogo" className="size-18" src={youtubeLogo}/>
       </div>
       <div className="pt-2 col-span-10 px-60">
         <div className="flex">
