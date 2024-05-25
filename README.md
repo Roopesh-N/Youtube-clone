@@ -7,4 +7,4 @@ Used API-Polling for live chat
 
 
 ### Home Page
-![Home Page](images/Homepage.png)
+<img src="images/Homepage.png" alt="Home Page" width="600"/>
