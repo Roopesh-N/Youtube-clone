@@ -67,4 +67,3 @@ To get a local copy up and running follow these simple steps.
 
 <img src="images/watchVideo.png" alt="watch video" width="600"/>
 
-
